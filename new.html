@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>发表新的主题 - ITeye论坛频道</title>
+    <meta name="description" content="Java编程,Spring Struts Webwork框架深入">
+    <meta name="keywords" content="Java编程 Spring框架 AJAX技术 Agile ITeye深度技术社区">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="./css/forum.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./css/SyntaxHighlighter.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./css/ui.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="clearfix">
+                <div id="user_nav">
+                    <a href="http://cuili200.iteye.com/" title="查看我的博客首页" class="welcome">欢迎cuili200</a>
+                    <a id="notifications_count" href="http://my.iteye.com/notifications">0</a>
+                    <a href="http://my.iteye.com/messages" title="发送站内短信">收件箱</a>
+                    <a href="http://my.iteye.com/" title="我的应用首页">我的应用</a>
+                    <div class="quick_menu" style="display:none;">
+                        <a href="http://my.iteye.com/feed" title="我关注的好友动态消息">我的关注</a>
+                        <a href="http://my.iteye.com/mygroup" title="我加入的群组最新话题">我的群组</a>
+                        <a href="http://my.iteye.com/myresume" title="我的个人简历">我的简历</a>
+                        <a href="http://my.iteye.com/admin/album" title="我的个人简历">我的相册</a>
+                        <a href="http://my.iteye.com/admin/link" title="我收藏的网络资源链接">我的收藏</a>
+                        <a href="http://my.iteye.com/admin/code" title="我收藏的代码">我的代码</a>
+                        <a href="http://my.iteye.com/admin/weibo" title="用微博发表简短的话题">我的微博</a>
+                    </div>
+                    <a href="http://cuili200.iteye.com/admin" title="管理我的博客">我的博客</a>
+                    <a href="http://my.iteye.com/profile" title="修改我的个人设置">设置</a>
+                    <a href="http://www.iteye.com/logout" class="nobg">退出</a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div id="branding">
+                    <a href="http://www.iteye.com/">
+                        <img alt="ITeye-最棒的软件开发交流社区" src="./images/logo.gif" title="ITeye-最棒的软件开发交流社区">
+                    </a>
+                </div>
+            </div>  
+        </div>
+
+        <div id="content" class="clearfix">
+            <div id="main">      
+                <div class="crumbs">
+                    <a href="http://www.iteye.com/forums">论坛首页</a> <span class="arrow">→</span>
+                    <a href="http://www.iteye.com/forums/board/web">Web前端技术版</a>
+                </div>
+
+                <div style="padding-top: 20px">
+                    <form action="http://www.iteye.com/forums/41/topics" id="editor_form" method="post">
+                        <div style="margin:0;padding:0;display:inline">
+                            <input name="authenticity_token" type="hidden" value="osW/q1z0OF82606iZFyMoqy2U8a9i7CXF5wr1ltXYcs=">
+                        </div>    
+                        <table id="forum_main" cellspacing="1">
+                            <thead>
+                                <tr>
+                                    <td colspan="2">发表主题</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="row1">主题</td>
+                                    <td class="row2">
+                                        <input class="text required min-length-3 bad-words validation-failed" id="topic_title" maxlength="80" name="topic[title]" size="45" style="width:450px;" type="text" title="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="row1">主题标签</td>
+                                    <td class="row2">
+                                        <input autocomplete="off" class="text max-tag-5" id="topic_tag_list" name="topic[tag_list]" size="30" style="width:290px;" type="text">&nbsp;&nbsp;用逗号分开，不超过五个
+                                        <div id="current_tags_panel"></div>
+                                        <div id="suggested_tags_panel">
+                                            推荐标签：<a href="http://www.iteye.com/forums/41/topics/new#" class="">JavaScript</a>
+                                            <a href="http://www.iteye.com/forums/41/topics/new#" class=""> HTML5</a>
+                                            <a href="http://www.iteye.com/forums/41/topics/new#" class=""> jQuery</a>
+                                            <a href="http://www.iteye.com/forums/41/topics/new#" class=""> CSS</a>
+                                            <a href="http://www.iteye.com/forums/41/topics/new#" class=""> </a>      
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td colspan="2" align="center" class="row4">
+                                        <input class="submit" id="submit_button" name="commit" type="submit" value="提交">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+        </div>
+
+        <div id="nav">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="http://www.iteye.com/">首页</a></li>
+                    <li><a href="http://www.iteye.com/news">资讯</a></li>
+                    <li><a href="http://www.iteye.com/magazines">精华</a></li>
+                    <li><a href="http://www.iteye.com/forums" class="selected">论坛</a></li>
+                    <li><a href="http://www.iteye.com/ask">问答</a></li>
+                    <li><a href="http://www.iteye.com/blogs">博客</a></li>
+                    <li><a href="http://www.iteye.com/blogs/subjects">专栏</a></li>
+                    <li><a href="http://www.iteye.com/groups">群组</a></li>
+                    <li><a target="_blank" href="http://job.csdn.net/">招聘</a></li>
+                    <li class="last"><a href="http://www.iteye.com/search">搜索</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <div id="footer">
+            <div id="site_nav">
+                <ul>
+                    <li><a href="#">广告服务</a></li>
+                    <li><a href="#">黑板报</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li class="last"><a href="#">友情链接</a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                © 2003-2015 abc.com.    [ <a href="#">京ICP证110151号</a>  京公网安备110105010620 ]<br>
+                百联优力(北京)投资有限公司  版权所有<br>
+            </div>
+        <!-- footer end! -->
+        </div>
+    </div>
+
+</body>
+</html>
