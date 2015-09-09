@@ -82,6 +82,15 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td class="row1">内容</td>
+                                    <td class="row2">
+                                        <textarea id="editor_id" name="content" style="width:700px;height:300px;">
+                                            &lt;strong&gt;HTML内容&lt;/strong&gt;
+                                        </textarea>
+                                    </td>
+                                </tr>
+
 
 
                                 <tr>
@@ -129,6 +138,12 @@
         <!-- footer end! -->
         </div>
     </div>
-
+<script charset="utf-8" src="./editor/kindeditor.js"></script>
+<script charset="utf-8" src="./editor/lang/zh_CN.js"></script>
+<script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
 </body>
 </html>
