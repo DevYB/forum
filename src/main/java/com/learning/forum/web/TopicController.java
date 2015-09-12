@@ -22,7 +22,6 @@ public class TopicController {
     @RequestMapping("/topics")
     public String index(Model model){
         model.addAttribute("topics", topicService.findAll());
-        logger.info("xxxxxxxxxxxxxxxxxxxxxx");
         return "topics/index";
     }
 
@@ -32,8 +31,8 @@ public class TopicController {
     }
 
     @RequestMapping(value="/topics", method = RequestMethod.POST)
-    public String create(@RequestParam("title") String title,
-                         @RequestParam("content") String content){
+    public String create(String title, String content){
+        logger.info("title is {}", title);
         topicService.createTopic(title, content);
         return "redirect:/topics";
     }
